@@ -1,0 +1,67 @@
+/* Basic styling for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* Style the navbar */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#navbar header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* Style the main content */
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.main-section header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+    
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
